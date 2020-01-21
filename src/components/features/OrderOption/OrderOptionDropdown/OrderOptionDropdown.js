@@ -1,4 +1,3 @@
-  
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from '../OrderOption.scss';
@@ -31,9 +30,8 @@ const OrderOptionDropdown = ({
 );
 
 OrderOptionDropdown.propTypes = {
-  name: PropTypes.string,
   values: PropTypes.array,
-  required: PropTypes.string,
+  required: PropTypes.bool,
   currentValue: PropTypes.string,
   setOptionValue: PropTypes.func,
 };
