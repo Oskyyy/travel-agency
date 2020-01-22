@@ -1,4 +1,4 @@
-@import '../../../styles/settings.scss';
+@import "../../../styles/settings.scss";
 
 .component {
   background: $color-success;
@@ -23,5 +23,9 @@
     &:hover {
       background: darken($color-primary, 5%);
     }
+  }
+
+  &:disabled {
+    background: grey;
   }
 }
