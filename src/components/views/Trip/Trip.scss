@@ -1,4 +1,4 @@
-@import '../../../styles/settings.scss';
+@import "../../../styles/settings.scss";
 
 .flag {
   width: 100px;
@@ -7,4 +7,8 @@
 
 .intro {
   margin: 0 0 ($base-size * 3) 0;
+}
+
+.promotion {
+  font-size: ($base-size * 2);
 }

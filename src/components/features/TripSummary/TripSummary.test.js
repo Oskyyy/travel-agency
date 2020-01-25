@@ -25,6 +25,7 @@ describe('Component TripSummary', () => {
     const expectedName = 'Lorem ipsum';
     const expectedCost = '100';
     const expectedDays = 7;
+    const expectedPromoCost = '80';
     const component = shallow(
       <TripSummary
         name={expectedName}
@@ -45,7 +46,13 @@ describe('Component TripSummary', () => {
         .find('.details span')
         .at(1)
         .text()
-    ).toEqual(`from ${expectedCost}`);
+    ).toEqual(`Price from: $${expectedPromoCost}`);
+    expect(
+      component
+        .find('.details span')
+        .at(2)
+        .text()
+    ).toEqual(`Standard price: $${expectedCost}`);
   });
 
   it('should render correct tags array', () => {
