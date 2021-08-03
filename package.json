@@ -46,7 +46,7 @@
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "react-router-transition": "^2.1.0",
-    "redux": "^4.1.0",
+    "redux": "^4.1.1",
     "rimraf": "^3.0.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^2.0.0",
